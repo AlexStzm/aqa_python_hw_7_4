@@ -9,7 +9,6 @@ def test_greeting():
     age = 25
 
     # TODO Сформируйте нужную строку
-    #output = "Привет, " + name + "! Тебе " + str(age) + " лет."
     output = f"Привет, {name}! Тебе {age} лет."
     print(output)
 
@@ -26,7 +25,6 @@ def test_rectangle():
     b = 20
 
     # TODO сосчитайте периметр
-    #perimeter = a * 2 + b * 2
     perimeter = (a + b) * 2
     assert perimeter == 60
 
@@ -61,8 +59,6 @@ def test_random_list():
     """
 
     # TODO создайте список
-    # l = sorted([random.randint(0, 100), random.randint(0, 100), random.randint(0, 100), random.randint(0, 100), random.randint(0, 100),
-    #      random.randint(0, 100), random.randint(0, 100), random.randint(0, 100), random.randint(0, 100), random.randint(0, 100)])
     l = sorted(random.sample(range(0, 100), 10))
 
     assert len(l) == 10
@@ -94,9 +90,7 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
 
     # TODO создайте словарь
-    #d = {key: value for key, value in zip(first, second)}
     d = dict(zip(first, second))
-    #print([val for val in d.values()])
     print(d.values())
 
     assert isinstance(d, dict)
